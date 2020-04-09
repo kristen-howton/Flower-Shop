@@ -1,3 +1,4 @@
+//HTML representation of a Distributor
 export const Distributor = distributorObject => {
     return `
         <article class="distributor">
