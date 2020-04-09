@@ -1,0 +1,94 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "Name": "Daisy",
+            "color": "Yellow"
+        },
+        {
+            "id": 2,
+            "Name": "Afrian Violet",
+            "color": "Purple"
+        },
+        {
+            "id": 3,
+            "commonName": "Allium roseum",
+            "color": "Pink"
+        },
+        {
+            "id": 4,
+            "Name": "Amarylli",
+            "color": "Pink"
+        },
+        {
+            "id": 5,
+            "Name": "Daisy",
+            "color": "White"
+        }
+    ], 
+        "retailers": [
+            {
+                "id": 1,
+                "name": "Flower Shop",
+                "address": "123 Flower Shop Blvd",
+                "city": "Nashville",
+                "state": "TN",
+                "distributorId": 1
+            },
+            {
+                "id": 2,
+                "name": "Flower",
+                "address": "123 Flower Ave",
+                "city": "Bowling Green",
+                "state": "KY",
+                "distributorId": 2
+            },
+            {
+                "id": 3,
+                "name": "The Pretty Flower",
+                "address": "123 Pretty Flower Lane",
+                "city": "Enfiled",
+                "state": "NH",
+                "distributorId": 3
+            },
+            {
+                "id": 4,
+                "name": "Flowerz",
+                "address": "123 Flowerz Blvd",
+                "city": "Dawson Springs",
+                "state": "KY",
+                "distributorId": 2
+            },
+            {
+                "id": 5,
+                "name": "Bouquets",
+                "address": "123 Bouquet Road",
+                "city": "Murfreesboro",
+                "state": "TN",
+                "distributorId": 1
+            }
+        ],
+        "distributors": [
+            {
+                "id": 1,
+                "name": "Flower 1",
+                "address": "123 Flowers Street",
+                "city": "Murfeesboro",
+                "state": "TN"
+            },
+            {
+                "id": 2,
+                "name": "Flower 2",
+                "address": "123 Flower Blvd",
+                "city": "Nashville",
+                "state": "TN"
+            },
+            {
+                "id": 3,
+                "name": "Flower 3",
+                "address": "123 Place Street",
+                "city": "Enfield",
+                "state": "NH"
+            }
+        ]
+}
