@@ -1,8 +1,10 @@
 export const Retailer = (retailerObject, foundDistributor) => {
     return `
-        <section class="retailer">
+        <article class="retailer">
             <h3>Retailer Name: ${retailerObject.name}</h3>
-            <article>Location: ${retailerObject.city}, ${retailerObject.state}</article>
-            <section>: ${foundDistributor.name} in ${foundDistributor.city}, ${foundDistributor.state}</section>
+            <section>Location: ${retailerObject.city}, ${retailerObject.state}</section>
+            <section>: ${foundDistributor.name}</section>
+            <section>${foundDistributor.city}, ${foundDistributor.state}</section>
+        </article>
     `
 }

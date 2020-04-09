@@ -1,6 +1,5 @@
-
-import { useDistributors } from "./DistributorProvider.js"
-import { Distributor } from "./Distributor.js"
+import { Distributor } from "./scripts/distributors/Distributor.js";
+import { useDistributors } from "./scripts/distributors/DistributorProvider.js";
 
 const contentTarget = document.querySelector(".distributorContainer")
 

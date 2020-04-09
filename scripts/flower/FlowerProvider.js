@@ -1,17 +1,7 @@
-import { useFlowers } from "./FlowerProvider.js"
-import { Flower } from "./Flower.js"
+let flowers = []
 
-const contentTarget = document.querySelector(".flowerContainer")
+export const useFlowers = () => flowers.slice()
 
-const renderFlowers = (flowersToRender) => {
-    contentTarget.innerHTML = flowersToRender.map(
-        (flowerObject) => {
-            return Flower(flowerObject)
-        }
-    ).join("")
-}
-
-export const FlowerList = () => {
-    const allFlowers = useFlowers()
-    renderFlowers(allFlowers)
-}
+export const getFlowers = () => fetch("http://localhost:3000/flowers")
+    .then(response => response.json())
+    .then(parsedFlowers => flowers = parsedFlowers)

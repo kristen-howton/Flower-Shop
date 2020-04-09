@@ -1,11 +1,11 @@
-import { useFlowers } from "./FlowerProvider.js"
-import { Flower } from "./Flower.js"
+import { useFlowers } from "./FlowerProvider.js";
+import { Flower } from "./Flower.js";
 
 const contentTarget = document.querySelector(".flowerContainer")
 
 const renderFlowers = (flowersToRender) => {
     contentTarget.innerHTML = flowersToRender.map(
-        (flowerObject) => {
+        flowerObject => {
             return Flower(flowerObject)
         }
     ).join("")

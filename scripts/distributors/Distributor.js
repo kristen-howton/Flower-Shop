@@ -1,7 +1,8 @@
 export const Distributor = distributorObject => {
     return `
-        <section class="distributor">
+        <article class="distributor">
             <h3>Distributor Name: ${distributorObject.name}</h3>
-            <p>Location: ${distributorObject.city}, ${distributorObject.state}</p>
+            <section>Location: ${distributorObject.city}, ${distributorObject.state}</section>
+        </article>
     `
 }
