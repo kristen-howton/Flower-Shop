@@ -1,6 +1,6 @@
-import { useRetailers } from "./RetailProvider.js";
-import { useDistributors } from "../distributors/DistributorProvider.js";
-import { Retailer } from "./Retailer.js";
+import { useRetailers } from "./RetailProvider.js"
+import { useDistributors } from "../distributors/DistributorProvider.js"
+import { Retailer } from "./Retailer.js"
 
 const contentTarget = document.querySelector(".retailerContainer")
 
