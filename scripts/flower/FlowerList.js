@@ -3,7 +3,7 @@ import { Flower } from "./Flower.js";
 
 const contentTarget = document.querySelector(".flowerContainer")
 
-const renderFlowers = (flowersToRender) => {
+const renderFlowers = flowersToRender => {
     contentTarget.innerHTML = flowersToRender.map(
         flowerObject => {
             return Flower(flowerObject)
