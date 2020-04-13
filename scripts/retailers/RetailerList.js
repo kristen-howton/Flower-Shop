@@ -15,8 +15,8 @@ const renderRetailers = retailersToRender => {
     const allFlowers = useFlowers()
     const allNurseryDistributors = useNurseryDistributors()
     contentTarget.innerHTML = retailersToRender.map(
-        retailerObject => {
-            const foundDistributor = allDistributors.find(distributor => distributor.id === retailerObject.distributorId)
+        retailerToRender => {
+            const foundDistributor = allDistributors.find(distributor => distributor.id === retailerToRender.distributorId)
             const foundNurseryDistributors = allNurseryDistributors.filter(
                 nurseryDistributor => foundDistributor.id === nurseryDistributor.distributorId
             )
@@ -26,9 +26,9 @@ const renderRetailers = retailersToRender => {
                 }
             )
             const foundFlowers = foundNurseries.map(
-                nurseryObject => {
+                foundNursery => {
                     const foundNurseryFlowers = allNurseryFlowers.filter(
-                        nurseryFlower => nurseryObject.id === nurseryFlower.nurseryId
+                        nurseryFlower => foundNursery.id === nurseryFlower.nurseryId
                     )
                     return foundNurseryFlowers.map(
                         foundNurseryFlower => allFlowers.find(flower => foundNurseryFlower.flowerId === flower.id)
@@ -36,7 +36,7 @@ const renderRetailers = retailersToRender => {
                 }
             ).flat()
 
-            return Retailer(retailerObject, foundDistributor, foundNurseries, foundFlowers)
+            return Retailer(retailerToRender, foundDistributor, foundNurseries, foundFlowers)
         }
     ).join("")
 }
