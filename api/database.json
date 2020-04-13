@@ -2,27 +2,27 @@
     "flowers": [
         {
             "id": 1,
-            "Name": "Daisy",
+            "name": "Daisy",
             "color": "Yellow"
         },
         {
             "id": 2,
-            "Name": "Afrian Violet",
+            "name": "Afrian Violet",
             "color": "Purple"
         },
         {
             "id": 3,
-            "Name": "Allium roseum",
+            "name": "Allium roseum",
             "color": "Pink"
         },
         {
             "id": 4,
-            "Name": "Amarylli",
+            "name": "Amarylli",
             "color": "Pink"
         },
         {
             "id": 5,
-            "Name": "Daisy",
+            "name": "Daisy",
             "color": "White"
         }
     ], 
